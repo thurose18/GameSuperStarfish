@@ -1,0 +1,12 @@
+# ninja log v5
+132	1413	7724826797322552	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	fb2a49151973774c
+1415	2300	7724826804372184	D:/MINHTHU/game/SuperStarfish/Filecode/Super-Starfish-Copy/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5s4w622z/obj/arm64-v8a/libswappywrapper.so	fd69e63160e4eea3
+109	4912	7724826834158200	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	44d7d78941659591
+94	5251	7724826837185974	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c6a16f9695b804ee
+2	5366	7724826838877762	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e11a7749cd3e25bf
+118	5485	7724826840325613	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cdf940144bac22a0
+87	5706	7724826841752159	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b0c1a15f11de95f5
+125	6066	7724826846122231	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2cd0380b07f0bbe9
+80	6307	7724826848559306	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3a00b4c39582f360
+101	6354	7724826849100672	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	43d27a106a658a8e
+6354	6490	7724826850437671	D:/MINHTHU/game/SuperStarfish/Filecode/Super-Starfish-Copy/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5s4w622z/obj/arm64-v8a/libgame.so	78782faf51f95b91

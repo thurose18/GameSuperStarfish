@@ -69,8 +69,10 @@ public class Player : MonoBehaviour
         Debug.Log("Game Over!");
 
         // Hiển thị màn hình Game Over
-         GameOverUI.Instance.Show();
+        if (GameOverUI.Instance != null)
+            GameOverUI.Instance.Show();
 
-        GameManager.Instance.GameOver();
+        if (GameManager.Instance != null)
+            GameManager.Instance.GameOver();
     }
 }
