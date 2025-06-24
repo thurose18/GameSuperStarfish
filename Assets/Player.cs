@@ -53,4 +53,21 @@ public class Player : MonoBehaviour
         }
 #endif
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            Debug.Log("Player collided with an obstacle!");
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        // Ẩn sao biển hoặc dừng game
+        gameObject.SetActive(false);
+
+        // Hiển thị màn hình Game Over
+       // GameOverUI.Instance.Show();
+    }
 }
