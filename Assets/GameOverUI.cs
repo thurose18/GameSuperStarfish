@@ -8,11 +8,14 @@ public class GameOverUI : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        gameOverPanel.SetActive(false);
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
     }
 
     public void Show()
     {
-        gameOverPanel.SetActive(true);
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
+        Debug.Log("Game Over UI is now visible!");
     }
 }

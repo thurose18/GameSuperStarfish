@@ -66,8 +66,11 @@ public class Player : MonoBehaviour
     {
         // Ẩn sao biển hoặc dừng game
         gameObject.SetActive(false);
+        Debug.Log("Game Over!");
 
         // Hiển thị màn hình Game Over
-       // GameOverUI.Instance.Show();
+         GameOverUI.Instance.Show();
+
+        GameManager.Instance.GameOver();
     }
 }

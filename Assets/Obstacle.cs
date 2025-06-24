@@ -6,6 +6,9 @@ public class Obstacle : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.isGameOver)
+            return;
+
         // Di chuyển chướng ngại vật xuống dưới
         transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
 

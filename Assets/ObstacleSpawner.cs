@@ -25,6 +25,10 @@ public class ObstacleSpawner : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.isGameOver)
+            return;
+        // Dừng việc spawn khi game over
+
         timer += Time.deltaTime;
         if (timer >= spawnInterval)
         {
