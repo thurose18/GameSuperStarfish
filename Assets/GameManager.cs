@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score;
+            scoreText.text = " " + score;
     }
 
     public void GameOver()
