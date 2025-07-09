@@ -652,9 +652,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 0
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 4}
+    m_Position: {x: 0.0000011533476, y: -4.1163007e-13, z: -1.4259987}
+    m_Rotation: {x: 7.6390456e-11, y: -0.00018366643, z: 0.000045246034}
+    m_Scale: {x: 1.0000001, y: 2.1000006, z: 3.9999998}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
