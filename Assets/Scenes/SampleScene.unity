@@ -717,7 +717,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 9044290724140659862, guid: eda763526322ad940b796ca6810418b2, type: 3}
+  m_Sprite: {fileID: 4414578868353889762, guid: 5f78aee4d35030f46b9e0df6c8557131, type: 3}
   m_Color: {r: 0.99371064, g: 0.99371064, b: 0.99371064, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -737,8 +737,8 @@ Transform:
   m_GameObject: {fileID: 1230652193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.87, y: -5.08, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.7387, y: 1.79, z: 0}
+  m_LocalScale: {x: 1.3847, y: 1.3759, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2318,7 +2318,7 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 1
@@ -2330,20 +2330,20 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0.013748169
           value: -0.022598267
-          inSlope: 17.947922
-          outSlope: 17.947922
+          inSlope: 10.224271
+          outSlope: 10.224271
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
-          outWeight: 0.09207169
+          outWeight: 0.114691265
         - serializedVersion: 3
-          time: 1
-          value: -0.07344818
-          inSlope: 18.535347
-          outSlope: 18.535347
+          time: 0.9725236
+          value: 0.12994212
+          inSlope: 10.817492
+          outSlope: 10.817492
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.08438988
+          inWeight: 0.11112535
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -3512,7 +3512,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   NoiseModule:
-    enabled: 0
+    enabled: 1
     strength:
       serializedVersion: 2
       minMaxState: 0
