@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
     public float moveSpeed = 10f; // Speed of horizontal movement
 
     private float halfWidth;
-
+    public GameObject gameOverEffectPrefab;
     void Start()
     {
         // Calculate half the width of the player in world units
@@ -64,6 +64,9 @@ public class Player : MonoBehaviour
 
     void GameOver()
     {
+        if (gameOverEffectPrefab != null)
+            Instantiate(gameOverEffectPrefab, transform.position, Quaternion.identity);
+
         // Ẩn sao biển hoặc dừng game
         gameObject.SetActive(false);
         Debug.Log("Game Over!");

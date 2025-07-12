@@ -5,6 +5,7 @@ public class Star : MonoBehaviour
     public float minRotateSpeed = 30f; // Tốc độ xoay nhỏ nhất (độ/giây)
     public float maxRotateSpeed = 90f; // Tốc độ xoay lớn nhất (độ/giây)
     private float currentRotateSpeed;
+    public GameObject collectEffectPrefab;
 
     void OnEnable()
     {
@@ -25,6 +26,10 @@ public class Star : MonoBehaviour
             // Tăng điểm
             if (GameManager.Instance != null)
                 GameManager.Instance.AddScore(1);
+
+            // Hiệu ứng thu thập
+            if (collectEffectPrefab != null)
+                Instantiate(collectEffectPrefab, transform.position, Quaternion.identity);
 
             // Ẩn vật phẩm (hoặc Destroy nếu không dùng pooling)
             gameObject.SetActive(false);
