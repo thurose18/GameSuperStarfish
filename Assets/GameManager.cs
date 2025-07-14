@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public int score = 0;
     public Text scoreText; // Kéo UI Text vào đây trong Inspector
+    public int highScore = 0; // Thêm biến highScore để lưu điểm cao nhất
+    public Text highScoreText; // Kéo UI Text cho điểm cao nhất vào đây trong Inspector
 
     public AudioClip collectSound;
     public AudioClip gameOverSound;
@@ -17,6 +19,8 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         audioSource = GetComponent<AudioSource>();
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
+        UpdateScoreUI();
     }
     public void PlaySound(AudioClip clip)
     {
@@ -26,6 +30,13 @@ public class GameManager : MonoBehaviour
     public void AddScore(int value)
     {
         score += value;
+        if (score > highScore)
+        {
+            highScore = score;
+            PlayerPrefs.SetInt("HighScore", highScore); // Lưu điểm cao nhất vào PlayerPrefs
+            if (highScoreText != null)
+                highScoreText.text = "Best Score: " + highScore; // Cập nhật UI cho điểm cao nhất
+        }
         UpdateScoreUI();
         PlaySound(collectSound);
     }
@@ -33,13 +44,20 @@ public class GameManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = " " + score;
+            scoreText.text = "Score: " + score;
+        if (highScoreText != null) 
+            highScoreText.text = "Best Score: " + highScore; // Cập nhật UI cho điểm cao nhất
     }
 
+    // Update the GameOver method to match the correct signature of the Show method in GameOverUI
     public void GameOver()
     {
         isGameOver = true;
         PlaySound(gameOverSound);
+        if (GameOverUI.Instance != null)
+        {
+            GameOverUI.Instance.Show(); // Removed the arguments to match the method signature
+        }
     }
 
 }
